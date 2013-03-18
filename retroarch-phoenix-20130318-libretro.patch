@@ -1,0 +1,25 @@
+diff -urN retroarch-phoenix-20130318/retroarch-phoenix.cpp retroarch-phoenix-20130318-patched/retroarch-phoenix.cpp
+--- retroarch-phoenix-20130318/retroarch-phoenix.cpp	2013-03-18 07:52:35.000000000 +1100
++++ retroarch-phoenix-20130318-patched/retroarch-phoenix.cpp	2013-03-18 04:50:40.000000000 +1100
+@@ -998,7 +998,7 @@
+          if (configs.cli.get("libretro_path", tmp))
+             libretro.setPath(tmp);
+          else
+-            libretro.setPath("");
++            libretro.setPath("/usr/lib/libretro");
+ 
+          if (configs.cli.get("phoenix_last_rom", tmp))
+             rom.setPath(tmp);
+@@ -1090,7 +1090,11 @@
+          vbox.append(net.hlayout[1]);
+          vbox.append(net.hlayout[2], 20);
+ 
+-         start_btn.onTick = [this]() { this->start_retroarch(); };
++         start_btn.onTick = [this]()
++           {
++             libretro.saveConfig();
++             this->start_retroarch();
++           };
+       }
+ 
+       void show_error(const string& err)

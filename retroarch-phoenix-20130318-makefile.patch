@@ -1,0 +1,22 @@
+diff -urN retroarch-phoenix-20130318/Makefile.qt retroarch-phoenix-20130318-patched/Makefile.qt
+--- retroarch-phoenix-20130318/Makefile.qt	2013-03-18 07:52:35.000000000 +1100
++++ retroarch-phoenix-20130318-patched/Makefile.qt	2013-03-18 18:49:49.954767825 +1100
+@@ -4,7 +4,7 @@
+ RUBYDEFINES = -DINPUT_SDL
+ RUBYLIBS = -lSDL -lX11
+ 
+-PREFIX = /usr/local
++PREFIX = /usr
+ 
+ CXXFILES = $(wildcard *.cpp)
+ CFILES = $(wildcard *.c)
+@@ -13,8 +13,8 @@
+ 
+ QT_CFLAGS = $(shell pkg-config --cflags QtCore QtGui)
+ QT_LIBS = $(shell pkg-config --libs QtCore QtGui)
+-CXXFLAGS += -O3 -std=gnu++0x -Wno-narrowing
+-CFLAGS += -O3 -std=gnu99
++CXXFLAGS += -std=gnu++0x -Wno-narrowing
++CFLAGS += -std=gnu99
+ 
+ INCLUDES = -Iphoenix -I.

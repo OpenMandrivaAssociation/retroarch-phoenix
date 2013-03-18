@@ -1,0 +1,16 @@
+diff -urN retroarch-phoenix-20130318/retroarch-phoenix.desktop retroarch-phoenix-20130318-patched/retroarch-phoenix.desktop
+--- retroarch-phoenix-20130318/retroarch-phoenix.desktop	2013-03-18 07:52:35.000000000 +1100
++++ retroarch-phoenix-20130318-patched/retroarch-phoenix.desktop	2013-03-18 18:42:53.000000000 +1100
+@@ -2,9 +2,9 @@
+ Version=1.0
+ Type=Application
+ Name=RetroArch-Phoenix
+-Categories=Game;Emulator
+ GenericName=Phoenix frontend for RetroArch
++Comment=Simple GUI frontend for RetroArch using Phoenix framework
+ Exec=retroarch-phoenix
+-Icon=/usr/share/pixmaps/retroarch-phoenix.png
++Icon=retroarch-phoenix
+ StartupNotify=false
+-Name[en_US]=RetroArch-Phoenix
++Categories=Game;Emulator;
