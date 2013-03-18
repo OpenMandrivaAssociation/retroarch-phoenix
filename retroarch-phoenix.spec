@@ -30,6 +30,7 @@ Simple GUI frontend for RetroArch using Phoenix framework.
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+sed -i s,"/usr/lib",%{_libdir},g retroarch-phoenix.cpp
 
 %build
 %setup_compile_flags
