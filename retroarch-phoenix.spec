@@ -4,7 +4,7 @@
 %define debug_package %{nil}
 
 Name:		retroarch-phoenix
-Version:	20130318
+Version:	20130609
 Release:	1
 Summary:	Simple GUI frontend for RetroArch using Phoenix framework
 Group:		Emulators
