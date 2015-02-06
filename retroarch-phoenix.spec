@@ -5,7 +5,7 @@
 
 Name:		retroarch-phoenix
 Version:	20130609
-Release:	1
+Release:	2
 Summary:	Simple GUI frontend for RetroArch using Phoenix framework
 Group:		Emulators
 License:	GPLv3
