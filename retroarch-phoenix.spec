@@ -9,7 +9,7 @@ Release:	2
 Summary:	Simple GUI frontend for RetroArch using Phoenix framework
 Group:		Emulators
 License:	GPLv3
-URL:		http://www.libretro.org
+URL:		https://www.libretro.org
 # git snapshot
 Source0:	%{name}-%{version}.tar.bz2
 # make sure proper path to libretro is set
