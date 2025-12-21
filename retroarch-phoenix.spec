@@ -18,6 +18,7 @@ Patch0:		retroarch-phoenix-20130318-libretro.patch
 Patch1:		retroarch-phoenix-20130318-makefile.patch
 # overwrite menu-entry because the default one sucks
 Patch2:		retroarch-phoenix-20130318-desktop.patch
+BuildRequires:	make
 BuildRequires:	qt4-devel
 BuildRequires:	pkgconfig(sdl)
 Requires:	retroarch
